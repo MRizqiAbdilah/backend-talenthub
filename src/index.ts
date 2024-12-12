@@ -3,8 +3,6 @@ import express from "express";
 import router from "./routes/food.route";
 import cors from "cors";
 
-const PORT = process.env.PORT || 4000;
-
 async function init() {
   try {
     const db = await connectDB();
@@ -14,6 +12,15 @@ async function init() {
     app.use(cors());
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
+
+    const PORT = 3000;
+
+    app.get("/", (req, res) => {
+      res.status(200).json({
+        message: "Server is running",
+        data: null,
+      });
+    });
 
     app.use("/foods", router);
 
