@@ -1,7 +1,7 @@
-import connectDB from "@utils/database";
 import express from "express";
 import router from "./routes/food.route";
 import cors from "cors";
+import connectDB from "./utils/database";
 
 async function init() {
   try {

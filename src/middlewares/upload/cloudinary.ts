@@ -2,7 +2,7 @@ import {
   CLOUDINARY_API_KEY,
   CLOUDINARY_API_SECRET,
   CLOUDINARY_API_NAME,
-} from "@utils/env";
+} from "../../utils/env";
 
 import { v2 as cloudinary } from "cloudinary";
 

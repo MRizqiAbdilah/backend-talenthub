@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { create, gets, get } from "@services/food.service";
-import { UploadFile } from "@middlewares/upload/cloudinary";
+import { UploadFile } from "../middlewares/upload/cloudinary";
+import { create, gets, get } from "../services/food.service";
 
 interface CloudinaryUploadResult {
   secure_url: string;

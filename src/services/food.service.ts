@@ -1,4 +1,4 @@
-import { Food, IFood } from "@models/food.model";
+import { Food, IFood } from "../models/food.model";
 
 export const create = async (food: IFood): Promise<IFood> => {
   try {
